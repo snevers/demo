@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.rykj.mapper.DemandMapper" >
+    <resultMap id="BaseResultMap" type="com.rykj.entity.Demand" >
+        <id column="d_id" property="id" jdbcType="BIGINT" />
+        <result column="d_name" property="name" jdbcType="VARCHAR" />
+        <result column="d_phone_num" property="phoneNum" jdbcType="VARCHAR" />
+        <result column="d_content" property="content" jdbcType="VARCHAR"/>
+        <result column="d_email" property="email" jdbcType="VARCHAR" />
+        <result column="d_name_content" property="nameAndContent" jdbcType="VARCHAR" />
+        <result column="d_create_date" property="createDate" jdbcType="TIMESTAMP" />
+        <result column="d_modify_date" property="modifyDate" jdbcType="TIMESTAMP" />
+        <result column="d_status" property="status" jdbcType="TINYINT" />
+    </resultMap>
+
+    <sql id="Base_Column_List" >
+        d_id, d_name, d_phone_num, d_content, d_email, d_email, d_name_content, d_create_date, d_modify_date, d_status
+    </sql>
+
+    <select id="findAll" resultMap="BaseResultMap"  >
+       SELECT 
+       <include refid="Base_Column_List" />
+       FROM d_demand
+    </select>
+
+    <select id="findOne" parameterType="java.lang.Long" resultMap="BaseResultMap" >
+        SELECT 
+       <include refid="Base_Column_List" />
+       FROM users
+       WHERE d_id = #{id}
+    </select>
+
+   <!-- <delete id="delete" parameterType="java.lang.Long" >
+       DELETE FROM
+             users 
+       WHERE 
+             d_id = #{id}
+    </delete> -->
+    
+</mapper>

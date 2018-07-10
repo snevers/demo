@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.org/dtd/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+
+<table-filter match-catalog="rykj" match-name="d_classify" />
+	<table-filter match-catalog="rykj" match-name="d_function" />
+	<table-filter match-catalog="rykj" match-name="d_model" />
+	<table-filter match-catalog="rykj" match-name="d_project" />
+	<table catalog="rykj" name="d_classify" class="Classify">
+		<column name="d_id" property="id"></column>
+		<column name="d_name" property="name"></column>
+		<column name="d_no" property="no"></column>
+		<column name="d_project_id" property="projectId"></column>
+		<column name="d_description" property="description"></column>
+	</table>
+	<table catalog="rykj" name="d_function" class="Function">
+		<column name="d_id" property="id"></column>
+		<column name="d_name" property="name"></column>
+		<column name="d_description" property="description"></column>
+		<column name="d_no" property="no"></column>
+		<column name="d_model_id" property="modelId"></column>
+	</table>
+	<table catalog="rykj" name="d_model" class="Model">
+		<column name="d_id" property="id"></column>
+		<column name="d_description" property="description"></column>
+		<column name="d_name" property="name"></column>
+		<column name="d_classify_id" property="classifyId"></column>
+		<column name="d_no" property="no"></column>
+	</table>
+	<table catalog="rykj" name="d_project" class="Project">
+		<column name="d_id" property="id"></column>
+		<column name="d_description" property="description"></column>
+		<column name="d_no" property="no"></column>
+		<column name="d_name" property="name"></column>
+	</table>
+</hibernate-reverse-engineering>

@@ -1,0 +1,45 @@
+${AnsiColor.BRIGHT_YELLOW}                                                                                                                                                                                                                                                                                                                               
+                                  `.-/oo+ss+s+-/--`-``                          
+                            `:yymhmNMMMMMMMMMMMMMMNMMmmho-                      
+                           .dMMMMMMMMMMMMMMMMMMMMMMMMMMMMN:                     
+                           /MMMNdhyso++////:////++osyhmMMMm`                    
+                          +mMh+::::::::::::::::::::::::/oNM/                    
+                          sMy::::::::::::::::::::::::::::+Mh    ``              
+                 ``.-..`  +N/:::::::::::::::::::::::::::::dNoyyyyyhho.          
+               `+hysooosssoh::::::::::::::::::::::::::::::ydo//+o+//sd/         
+              -ds//ssss+:/dd:smmmmmmmmmmmmmmmmmmmmmmmmmmm/ydshNhoos+:/h-        
+             `d+::+/oymNmmNd:hy++++oNMm+++hsh++++NMN++++m+hMMNmdmh/:::/h        
+             -h::::ydhyhdMMN/d:     .-`  `+:/:   .-.    ssdMs//:/+y::::d        
+             -y:::/+:::::oMm/sh.        `/:::/.        :m+hN:::::::::::y        
+             `h::::::::::oM+::oyo:.   .-/:::::/:.` `./sy+:yMho/:::::::s-        
+              :s::::::oshNN::::://::-+ssosoooooo+:-:///:::dNmNmy::::/+-         
+               -s+::::ydhsMy/:::::::yo//:::::://oy:::::::sMm///:::++/`          
+                .+hs/::::+MMmy+/::::s:shy:::/hy+:o/:::/odmds:::/smm-            
+                 `mMNh+:::+sdmNNdhyo/://:::::-`.:+dmmmNy+/::::sNMMMd-           
+                 oMMMMNy/::::/hMMmo::+/::::::. .::oNMMMdo+/+odMMMMMMm-          
+          `     -NMMMMMMmhssydNMh/:+s/::::::::.::::+NMMMMNNNMMMMMMMMMm-         
+          `    .mMMMMMMMMMNMMMMh::/o::::::::::::::::+NMMMMMhMMMMMMMMMMm:        
+              -dMMMMMMMMNs+MMMN/::/::::::::::::::::::oMMMMM.+MMMMMMMMMMN:`      
+             -mMMMMMMMMm:`/MMmmso+//::::::::::::::::::dMMMN``oMMMMMMMMMMN/`     
+           `+NMMMMMMMMy.  /Md::///++++/:::::::::::::::oMMMh  `oMMMMMMMMMMN/`    
+    `    `-hMMMMMMMMm/`   /Mh:::::::::::::::::::::::::sMMM+   `yMMMMMMMMMMN/`   
+   `s` `-sNMMMMMMMMy.     -Mm::::::::::::::::::o::::::yMMN.    `hMMMMMMMMMMN+`  
+`/-+MhohNMMMMMMMMN+`      `dMy//:::::::::::::::::::::+NMMs      .dMMMMMMMMMMMs: 
+`omNMMMMMMMMMMMMh-         /MMNs::::::/:::::::::::::oNMMm.       .mMMMMMMMMMMM+ 
+  .dMMMMMMMMMMMo`     `.....yMMNho////+///////////odMMMMyooooooooohMMMMMMMMMMd` 
+   -NMMMMMMMMMN:     `hNNNNNNMMMMMMNNNNNNNNNNNNNNNMMMMMMMMMMMMMMMMMMMMMMMMMMMs  
+    oMMMMMMMMMMN:``` `mMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM+  
+    `yMMMMNNNNMMNy/`  sMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNd/`  
+     `hMms+++:+o/+oy. :MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNy:`    
+     +ms/::::::::::/. `NMMMMMMMMMMMMMMMMMMMMMNdNMMMMMMMMMMMMMMMMMMMMMNd+.       
+     o/:::o/:::::::+:` yMMMMMMMMMMMMMMMMMMdhhhhhmMMMMMMMMMMMMMMMMMMMN-`         
+     `:::+N:::sh:::Nh/ /MMMMMMMMMMMMMMMMMmyyyyyyMMMMMMMMMMMMMMMMMMMMy           
+      `-`+d:::hN:--+Nm `mMMMMMMMMMMMMMMMMMhyyyyyhMMMMMMMMMMMMMMMMMMM+           
+       smMd```hM-  `mh  oMMMMMMMMMMMMMMMMMMmdmddNMMMMMMMMMMMMMMMMMMM-           
+       `/hNNmNMMNdhyo`  /MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMN`           
+          .:+ooo+:.`    `MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMy            
+                         hNNNNNNNNNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM/            
+                                   ```````````..........``....`.```             
+${AnsiColor.BRIGHT_RED}
+Application Version: ${application.formatted-version}
+Spring Boot Version: ${spring-boot.formatted-version}                                                                                                                                                                                              
