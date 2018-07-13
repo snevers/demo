@@ -52,7 +52,7 @@ public class DemandService extends BaseService<Demand> {
 	}
 	
 	@Transactional()
-	public int save(Demand demand) {
+	public int insertSelective(Demand demand) {
 		return demandMapper.insertSelective(demand);
 	}
 	
