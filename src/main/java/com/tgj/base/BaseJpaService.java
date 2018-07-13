@@ -39,7 +39,7 @@ public class BaseJpaService<T> {
 	private BaseDao<T> baseDao;
 	
 	@Transactional
-	public T saveOrUpdate(T entity) {
+	public T save(T entity) {
 		return baseDao.save(entity);
 	}
 	
