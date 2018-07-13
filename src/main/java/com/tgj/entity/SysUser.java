@@ -2,8 +2,8 @@ package com.tgj.entity;
 
 import static javax.persistence.GenerationType.IDENTITY;
 
+import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 
 import javax.persistence.CascadeType;
@@ -15,13 +15,9 @@ import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
-import org.springframework.security.core.userdetails.UserDetails;
-
 @Entity
 @Table(name = "d_sys_user", catalog = "rykj", uniqueConstraints = @UniqueConstraint(columnNames = "username"))
-public class SysUser implements UserDetails {
+public class SysUser implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
@@ -32,17 +28,6 @@ public class SysUser implements UserDetails {
 
 	@ManyToMany(cascade = { CascadeType.REFRESH }, fetch = FetchType.LAZY, mappedBy = "sysUser")
 	private List<SysRole> roles = new ArrayList<>(0);
-
-	@Override
-	public Collection<? extends GrantedAuthority> getAuthorities() {
-		List<GrantedAuthority> auths = new ArrayList<>();
-		for (SysRole role : roles) {
-			for (SysPermission permission : role.getPermissions()) {
-				auths.add(new SimpleGrantedAuthority(permission.getName()));
-			}
-		}
-		return auths;
-	}
 
 	public Integer getGrade() {
 		return grade;
@@ -78,34 +63,12 @@ public class SysUser implements UserDetails {
 		this.password = password;
 	}
 
-	@Override
 	public String getPassword() {
 		return password;
 	}
 
-	@Override
 	public String getUsername() {
 		return username;
-	}
-
-	@Override
-	public boolean isAccountNonExpired() {
-		return true;
-	}
-
-	@Override
-	public boolean isAccountNonLocked() {
-		return true;
-	}
-
-	@Override
-	public boolean isCredentialsNonExpired() {
-		return true;
-	}
-
-	@Override
-	public boolean isEnabled() {
-		return true;
 	}
 
 	@Override
