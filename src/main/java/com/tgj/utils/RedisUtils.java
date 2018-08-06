@@ -1,4 +1,4 @@
-package com.tgj.util;
+package com.tgj.utils;
 
 import java.util.Calendar;
 import java.util.Date;

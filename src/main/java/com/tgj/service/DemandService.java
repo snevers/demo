@@ -17,8 +17,8 @@ import com.tgj.base.BaseService;
 import com.tgj.config.base.DataSourceType;
 import com.tgj.entity.Demand;
 import com.tgj.mapper.DemandMapper;
-import com.tgj.util.Criteria;
-import com.tgj.util.Restrictions;
+import com.tgj.utils.Criteria;
+import com.tgj.utils.Restrictions;
 
 import tk.mybatis.mapper.entity.Example;
 

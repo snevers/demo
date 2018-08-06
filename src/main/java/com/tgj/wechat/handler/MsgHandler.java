@@ -8,7 +8,7 @@ import me.chanjar.weixin.mp.bean.message.WxMpXmlOutMessage;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Component;
 
-import com.tgj.util.JsonUtils;
+import com.tgj.utils.JsonUtils;
 import com.tgj.wechat.builder.TextBuilder;
 
 import java.util.Map;

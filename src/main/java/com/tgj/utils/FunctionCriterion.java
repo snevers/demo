@@ -1,4 +1,4 @@
-package com.tgj.util;
+package com.tgj.utils;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,4 +1,4 @@
-package com.tgj.util;
+package com.tgj.utils;
 
 /**
  * 

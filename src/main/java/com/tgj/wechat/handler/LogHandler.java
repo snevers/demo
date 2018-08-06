@@ -6,7 +6,7 @@ import me.chanjar.weixin.mp.bean.message.WxMpXmlMessage;
 import me.chanjar.weixin.mp.bean.message.WxMpXmlOutMessage;
 import org.springframework.stereotype.Component;
 
-import com.tgj.util.JsonUtils;
+import com.tgj.utils.JsonUtils;
 
 import java.util.Map;
 

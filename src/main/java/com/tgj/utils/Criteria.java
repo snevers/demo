@@ -1,4 +1,4 @@
-package com.tgj.util;
+package com.tgj.utils;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -62,11 +62,4 @@ public class Criteria<T> implements Specification<T>, Serializable, Cloneable {
 		return this;
 	}
 
-	@Override
-	protected Object clone() throws CloneNotSupportedException {
-		Criteria<?> criteria = (Criteria<?>) super.clone();
-		criteria.criterions = new ArrayList<>(criterions);
-		criteria.record = new HashMap<>(record);
-		return criteria;
-	}
 }

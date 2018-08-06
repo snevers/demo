@@ -1,4 +1,4 @@
-package com.tgj.util;
+package com.tgj.utils;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
@@ -7,6 +7,8 @@ import java.lang.reflect.Modifier;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
@@ -15,6 +17,7 @@ import java.util.Set;
 import javax.persistence.Entity;
 import javax.persistence.Transient;
 
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -129,7 +132,7 @@ public class Restrictions {
 		for (Field field : fields) {
 			field.setAccessible(true);
 			Object obj = field.get(paras);
-			if (obj == null || !"private".equals(Modifier.toString(field.getModifiers())))
+			if (obj == null || !"private".equals(Modifier.toString(field.getModifiers())) || (obj instanceof String && StringUtils.isBlank(obj.toString())))
 				continue;
 			Annotation[] annos = field.getAnnotations();
 			if (validateTransient(annos))
@@ -141,9 +144,9 @@ public class Restrictions {
 			if (validateTransient(annos))
 				continue;
 
-			if (obj instanceof Set<?>) {
-				Set<?> sets = (Set<?>) obj;
-				if (sets.isEmpty())
+			if (obj instanceof Collection<?>) {
+				Collection<?> collection = (Collection<?>) obj;
+				if (collection.isEmpty())
 					continue;
 			}
 			sb.append(field.getName() + ".");

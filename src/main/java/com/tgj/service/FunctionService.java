@@ -6,8 +6,8 @@ import org.springframework.stereotype.Service;
 
 import com.tgj.base.BaseJpaService;
 import com.tgj.entity.Function;
-import com.tgj.util.Criteria;
-import com.tgj.util.Restrictions;
+import com.tgj.utils.Criteria;
+import com.tgj.utils.Restrictions;
 
 /**
  * 

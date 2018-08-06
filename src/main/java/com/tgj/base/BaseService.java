@@ -13,7 +13,7 @@ import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.tgj.util.Criteria;
+import com.tgj.utils.Criteria;
 
 /**
  * 
